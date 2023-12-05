@@ -4,7 +4,7 @@ import binance from "./binance.png";
 import card from "./card.png";
 import coinbase from "./coinbase.png";
 import dropbox from "./dropbox.png";
-import logo from "./logo.svg";
+import logo from "./logo.png";
 import quotes from "./quotes.svg";
 import robot from "./robot.png";
 import send from "./Send.svg";
@@ -39,9 +39,13 @@ import zapzap from "./zapzap.png"
 import escudo from "./escudo.png"
 import gamingBackground from "./gamingBackground.png"
 import gamingBackground2 from "./gamingBackground2.png"
+import gamingBackground3 from "./gamingBackground3.png"
 import desfoque from "./desfoque.png"
-
-
+import video from "./video.mp4"
+import img1_c from "./img1_c.png"
+import img2_c from "./img2_c.png"
+import img3_c from "./img3_c.png"
+import pdf from "./pdf.pdf"
 
 
 export {
@@ -86,6 +90,12 @@ export {
   escudo,
   gamingBackground,
   gamingBackground2,
-  desfoque
+  desfoque,
+  video,
+  img1_c,
+  img2_c,
+  img3_c,
+  pdf,
+  gamingBackground3,
 
 };

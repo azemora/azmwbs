@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#d6d1c8",
+        primary: "#03144b",
         secondary: "#051233",
         dimWhite: "rgba(255, 255, 255, 0.7)",
         dimBlue: "rgba(9, 151, 124, 0.1)",
@@ -13,7 +13,14 @@ module.exports = {
         gradientEnd: '#3c65bd',   
       },
       backgroundImage: {
-        'custom-gradient': 'linear-gradient(rgb(55, 65, 81), rgb(17, 24, 39), rgb(0, 0, 0))'
+        'custom-gradient': 'linear-gradient(to right, rgb(29, 78, 216), rgb(30, 64, 175), rgb(17, 24, 39))',
+        'custom-gradient3': 'linear-gradient(to top, rgb(29, 78, 216), rgb(30, 64, 175), rgb(17, 24, 39))',
+        'custom-gradient2': 'linear-gradient(to top, rgb(55, 65, 81), rgb(17, 24, 39), rgb(0, 0, 0))',
+        'custom-image': `url('./src/assets/gamingBackground.png')`,
+        'custom-image2' : `url('./src/assets/video.mp4')`,
+        'custom-image4' : `url('./src/assets/gamingBackground2.png')`,
+        'custom-image3' : `url('./src/assets/gamingBackground3.png')`
+
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],

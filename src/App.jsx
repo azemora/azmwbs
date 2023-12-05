@@ -9,18 +9,25 @@ const Home = () => (
         <Navbar/>
       </div>    
     </div>
-    <div className={`gradientStart ${styles.flexStart}`}>
+    <div className={`bg-custom-image bg-no-repeat bg-cover bg-center ${styles.flexStart}`}>
       <div className={`${styles.boxWidth}`}>
         <Hero/>
       </div>
     </div>
-    <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
+    <div className={`bg-custom-gradient bg-no-repeat bg-cover bg-center ${styles.flexStart}`}>
       <div className={`${styles.boxWidth}`}>
-        <Stats/>
         <Business/>
+      </div>
+    </div>
+    <div className={`bg-custom-gradient bg-no-repeat bg-cover bg-center ${styles.flexStart}`}>
+      <div className={`${styles.boxWidth}`}>
         <CardDeal/>
+      </div>
+    </div>
+    <div className={`bg-custom-gradient bg-no-repeat bg-center ${styles.paddingX} ${styles.flexStart}`}>
+      <div className={`${styles.boxWidth}`}>
         {/*<Testimonials/>*/}
-        <Clients/>
+       
         <CTA/>
         <Footer/>
       </div>

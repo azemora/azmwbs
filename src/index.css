@@ -45,7 +45,9 @@
     #33bbcf 90.29%
   );
 }
-
+.rounded-img {
+  border-radius: 100px; /* Adjust the radius as needed */
+}
 .bg-black-gradient {
   background: linear-gradient(
     144.39deg,
@@ -141,4 +143,32 @@
 .white__gradient {
   background: rgba(255, 255, 255, 0.6);
   filter: blur(750px);
+}
+
+video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+.content{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0.0, 0.0, 0.4);
 }

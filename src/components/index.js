@@ -17,6 +17,8 @@ import Lgservicos from "./Lgservicos";
 import Business2 from "./Business copy";
 import Button2 from "./Button copy";
 import CardDeal2 from "./CardDeal copy";
+import Carousel from "./Carousel";
+import BTdownload from "./BTdownload";
 export {
   Navbar,
   Billing,
@@ -36,5 +38,7 @@ export {
   Lgservicos,
   Business2,
   Button2,
-  CardDeal2
+  CardDeal2,
+  Carousel,
+  BTdownload
 };

@@ -25,7 +25,7 @@ const Business2 = () =>  (
         Lorem ipsum elite <br className="sm:block hidden" /> consectetur adipiscing.
       </h2>
       <p className={`${styles.paragraph} ${styles.justified} max-w-[470px] mt-5`}>
-      A OptSec impulsiona a transformação digital da sua empresa com soluções seguras e inovadoras. Vamos além da consultoria, facilitando a implementação prática das mudanças necessárias. Com a OptSec, você vivencia a transformação, posicionando sua empresa para prosperar na era digital.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae justo dictum, molestie nisl a, aliquet nisl. Aenean pharetra vestibulum tellus, vel mattis est porttitor id. 
       </p>
 
       <Button styles={`mt-10`} />

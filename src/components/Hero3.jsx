@@ -1,5 +1,5 @@
 import styles from "../style";
-import { discount, robot, backdoback, wp_contato, rosto } from "../assets";
+import { discount, robot, backdoback, wp_contato, rosto, logo } from "../assets";
 import GetStarted from "./GetStarted";
 
 const Hero3 = () => {
@@ -10,8 +10,8 @@ const Hero3 = () => {
 
         <div className="flex flex-row justify-between items-center w-full">
         <h1 className="flex-1 font-poppins font-semibold ss:text-[50px] text-[50px] text-white ss:leading-[50.8px] leading-[50px]">
-                Consultoria ativa: {" "}
-                <span className="text-gradient ss:text-[40px]">Resultados significativos.</span>{" "}
+                Lorem ipsum dolor: {" "}
+                <span className="text-gradient ss:text-[40px]">Consectetur adipiscing elit.</span>{" "}
               </h1>
           <div className="ss:flex hidden md:mr-4 mr-0">
             {/*<GetStarted />*/}
@@ -22,14 +22,12 @@ const Hero3 = () => {
             
         </h1>
         <p className={`${styles.paragraph} ${styles.justified} max-w-[700px] mt-5`}>
-        A OptSec é composta por uma equipe dinâmica de auditores especialistas em segurança com um background sólido em ciência da computação. Nós somos mais do que consultores, somos solucionadores de problemas ativos.
-
-        Nossa compreensão profunda de sistemas e seus pontos de vulnerabilidade nos permite identificar riscos e implementar soluções robustas de segurança. Nós não apenas aconselhamos, nós implementamos as mudanças necessárias, proporcionando segurança, confiabilidade e paz para seus clientes.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam viverra tempus sapien nec blandit. Vivamus in mauris vel dolor mollis tempus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin sed vulputate nibh. Mauris felis ante, interdum non lobortis et, sodales ac felis. Quisque tempus enim at felis iaculis viverra. Maecenas eu semper nisi, sed iaculis eros. Quisque tincidunt tempor libero at ultrices. 
         </p>
       </div>
 
       <div className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`}>
-        <img src={robot} alt="billing" className="w-[100%] h-[100%] relative z-[5]" />
+      <img src={logo} alt="billing" className="relative z-[5]" />
 
         {/* gradient start */}
         <div className="absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient" />
