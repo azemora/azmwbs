@@ -46,7 +46,10 @@ import img1_c from "./img1_c.png"
 import img2_c from "./img2_c.png"
 import img3_c from "./img3_c.png"
 import pdf from "./pdf.pdf"
-
+import roadmapback from "./roadmapback.png"
+import shuttle from "./shuttle.png"
+import arrowside from "./arrowside.png"
+import devmap from "./devmap.png"
 
 export {
   airbnb,
@@ -97,5 +100,9 @@ export {
   img3_c,
   pdf,
   gamingBackground3,
+  roadmapback,
+  shuttle,
+  arrowside,
+  devmap
 
 };

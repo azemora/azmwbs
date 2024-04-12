@@ -1,5 +1,5 @@
 import styles from "./style";
-import {  Navbar, Billing, CardDeal, Business, Clients, CTA, Stats, Footer, Testimonials, Hero, Services, Hero2, Eemails, Hero3, Lgservicos, Business2, CardDeal2 } from "./components";
+import {  Navbar, Billing, CardDeal, Business, Clients, CTA, Stats, Footer, Testimonials, Hero, Services, Hero2, Eemails, Hero3, Lgservicos, Business2, CardDeal2, Roadmap, Devmap } from "./components";
 import { BrowserRouter, Route, Router, Routes } from "react-router-dom";
 
 const Home = () => (
@@ -57,7 +57,10 @@ const Servicos = () => (
       <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>
           <Hero2/>
-          <Business/>
+          <Roadmap/>
+          <div style={{ marginTop: '5rem' }}></div>
+          <Devmap/>
+          <CTA/>
           <Footer/>
           
         </div>
@@ -71,13 +74,11 @@ const Aboutus = () => (
   <div className={`${styles.paddingX} ${styles.flexCenter}`}>
     <div className={`${styles.boxWidth}`}>
       <Navbar/>
-      <Hero3/>
-      <Testimonials/>
+      <Devmap/>
+
       <Footer/>
 
   <div>
-    <h1>Contact Page</h1>
-    <p>Welcome to our About us</p>
   </div>
   </div>
   </div>

@@ -172,3 +172,191 @@ video{
   height: 100%;
   background-color: rgb(0.0, 0.0, 0.4);
 }
+
+.map-container {
+  position: relative;
+  display: inline-block;
+}
+
+.info-box {
+  position: absolute;
+  top: 50%; /* Adjust based on actual tooltip positioning */
+  left: 50%; /* Adjust based on actual tooltip positioning */
+  transform: translate(-50%, -50%);
+  background: var(--black-gradient);
+  color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: var(--card-shadow);
+  text-align: left;
+  width: 300px; /* Adjust as needed */
+  transition: opacity 0.3s, visibility 0.3s, transform 0.3s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 10;
+}
+
+.info-box.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+.info-box h2 {
+  color: white;
+  font-size: 1.5rem; /* 24px */
+  font-weight: 600;
+  margin-top: 0;
+}
+
+.info-box p {
+  font-size: 1rem; /* 16px */
+  font-weight: 400;
+}
+
+/* Custom tooltip arrow */
+.info-box::before {
+  content: '';
+  position: absolute;
+  bottom: 100%; /* Adjust if necessary */
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent var(--black-gradient) transparent;
+}
+
+/* Animation for the info-box */
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.05);
+  }
+}
+
+.info-box.active {
+  animation: fadeInScale 0.3s ease-out forwards;
+}
+
+
+
+.phases-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+/*
+.phase {
+  color: #fff;
+  background: #16205a;
+  border-radius: 10px;
+  padding: 20px;
+  width: 200px; /* Adjust width as needed 
+}
+*/
+
+.phase {
+  color: #fff;
+  background: #16205a; /* Adjust this value to match your new gradient */
+  border-radius: 10px;
+  padding: 20px;
+  width: 200px; /* This should match the width in your new design */
+  transition: all 0.3s ease; /* Smooth transition for any hover effects or other changes */
+}
+
+.phase-title {
+  color: #f3c562; /* This is a general yellow color, adjust as needed */
+  /* other styles for the title */
+}
+.phase-content h3 {
+  color: #f3c562; /* Adjust the color code to match the icon color */
+  font-weight: bold;
+}
+
+
+.icon-placeholder {
+  width: 50px;
+  height: 50px;
+  background-color: #120e49;
+  margin-bottom: 30px;
+}
+
+/* Sample icon placeholder styling */
+.design {
+  background-image: url('path-to-your-icon/design-icon.png'); /* Replace with your icon path */
+  background-size: cover;
+}
+
+/* Add classes for other icons */
+
+h3 {
+  font-weight: bold;
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  font-size: 0.8em;
+  margin-bottom: 5px;
+}
+
+.phase-icon {
+  width: 30%; /* Reducing the width will also reduce the size, assuming height is auto */
+  height: auto; /* Maintains the aspect ratio of the icon */
+  display: block;
+  margin: 0 auto; /* Keeps the icon centered after size reduction */
+  padding-top: 10px; /* Adjust as needed */
+  padding-bottom: 20px; /* Adjust as needed */
+}
+
+.arrow-icon {
+  display: inline-block; /* or block if you want it on a new line */
+  margin:  5px; /* adjust as needed */
+  height: 15px; /* your desired size */
+  width: auto; /* maintain aspect ratio */
+
+}
+
+.devmap-container {
+  text-align: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.devmap-image {
+  /* Ensures the image is responsive and retains its transparency */
+  max-width: 100%;
+  height: auto;
+}
+.marginTop {
+  margin-top: 2rem; /* Adjust the value as needed */
+}
+
+.roadmap-container {
+  /* Your styles for the roadmap container */
+}
+
+.roadmap-title-container {
+  text-align: center;
+}
+
+.roadmap-title {
+  color: #ffc27c; /* Example color: tomato red */
+  margin-bottom: 0.5rem;
+  margin-top: 3rem; /* Adjust the space between title and subtitle */
+}
+
+.roadmap-subtitle {
+  color: #4682b4;
+  margin-bottom: 3rem; /* Example color: steel blue */
+}

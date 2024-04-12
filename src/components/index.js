@@ -19,6 +19,9 @@ import Button2 from "./Button copy";
 import CardDeal2 from "./CardDeal copy";
 import Carousel from "./Carousel";
 import BTdownload from "./BTdownload";
+import Roadmap from "./Roadmap";
+import Phase from "./Phase";
+import Devmap from "./Devmap";
 export {
   Navbar,
   Billing,
@@ -40,5 +43,8 @@ export {
   Button2,
   CardDeal2,
   Carousel,
-  BTdownload
+  BTdownload,
+  Roadmap,
+  Phase,
+  Devmap
 };
