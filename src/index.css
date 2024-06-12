@@ -242,42 +242,35 @@ video{
   animation: fadeInScale 0.3s ease-out forwards;
 }
 
-
-
 .phases-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
 }
-/*
+
 .phase {
   color: #fff;
   background: #16205a;
   border-radius: 10px;
   padding: 20px;
-  width: 200px; /* Adjust width as needed 
-}
-*/
-
-.phase {
-  color: #fff;
-  background: #16205a; /* Adjust this value to match your new gradient */
-  border-radius: 10px;
-  padding: 20px;
-  width: 200px; /* This should match the width in your new design */
-  transition: all 0.3s ease; /* Smooth transition for any hover effects or other changes */
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+  min-height: 400px; /* Ajuste conforme necessário */
 }
 
 .phase-title {
-  color: #f3c562; /* This is a general yellow color, adjust as needed */
-  /* other styles for the title */
-}
-.phase-content h3 {
-  color: #f3c562; /* Adjust the color code to match the icon color */
-  font-weight: bold;
+  color: #f3c562;
 }
 
+.phase-content h3 {
+  color: #f3c562;
+  font-weight: bold;
+}
 
 .icon-placeholder {
   width: 50px;
@@ -286,13 +279,10 @@ video{
   margin-bottom: 30px;
 }
 
-/* Sample icon placeholder styling */
 .design {
-  background-image: url('path-to-your-icon/design-icon.png'); /* Replace with your icon path */
+  background-image: url('path-to-your-icon/design-icon.png');
   background-size: cover;
 }
-
-/* Add classes for other icons */
 
 h3 {
   font-weight: bold;
@@ -311,20 +301,19 @@ li {
 }
 
 .phase-icon {
-  width: 30%; /* Reducing the width will also reduce the size, assuming height is auto */
-  height: auto; /* Maintains the aspect ratio of the icon */
+  width: 30%;
+  height: auto;
   display: block;
-  margin: 0 auto; /* Keeps the icon centered after size reduction */
-  padding-top: 10px; /* Adjust as needed */
-  padding-bottom: 20px; /* Adjust as needed */
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 20px;
 }
 
 .arrow-icon {
-  display: inline-block; /* or block if you want it on a new line */
-  margin:  5px; /* adjust as needed */
-  height: 15px; /* your desired size */
-  width: auto; /* maintain aspect ratio */
-
+  display: inline-block;
+  margin: 5px;
+  height: 15px;
+  width: auto;
 }
 
 .devmap-container {
@@ -334,16 +323,16 @@ li {
 }
 
 .devmap-image {
-  /* Ensures the image is responsive and retains its transparency */
   max-width: 100%;
   height: auto;
 }
+
 .marginTop {
-  margin-top: 2rem; /* Adjust the value as needed */
+  margin-top: 2rem;
 }
 
 .roadmap-container {
-  /* Your styles for the roadmap container */
+  text-align: center;
 }
 
 .roadmap-title-container {
@@ -351,12 +340,22 @@ li {
 }
 
 .roadmap-title {
-  color: #ffc27c; /* Example color: tomato red */
+  color: #ffc27c;
   margin-bottom: 0.5rem;
-  margin-top: 3rem; /* Adjust the space between title and subtitle */
+  margin-top: 3rem;
 }
 
 .roadmap-subtitle {
   color: #4682b4;
-  margin-bottom: 3rem; /* Example color: steel blue */
+  margin-bottom: 3rem;
+}
+
+.download-button {
+  background-color: #ffc27c;
+  color: #000;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-align: center;
+  display: inline-block;
+  margin-top: 16px; /* Adiciona espaçamento entre o texto e o botão */
 }

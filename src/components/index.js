@@ -22,6 +22,7 @@ import BTdownload from "./BTdownload";
 import Roadmap from "./Roadmap";
 import Phase from "./Phase";
 import Devmap from "./Devmap";
+import Devmap2 from "./Devmap2";
 export {
   Navbar,
   Billing,
@@ -46,5 +47,6 @@ export {
   BTdownload,
   Roadmap,
   Phase,
-  Devmap
+  Devmap,
+  Devmap2
 };

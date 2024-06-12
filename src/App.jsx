@@ -1,5 +1,5 @@
 import styles from "./style";
-import {  Navbar, Billing, CardDeal, Business, Clients, CTA, Stats, Footer, Testimonials, Hero, Services, Hero2, Eemails, Hero3, Lgservicos, Business2, CardDeal2, Roadmap, Devmap } from "./components";
+import {  Navbar, Billing, CardDeal, Business, Clients, CTA, Stats, Footer, Testimonials, Hero, Services, Hero2, Eemails, Hero3, Lgservicos, Business2, CardDeal2, Roadmap, Devmap, Devmap2 } from "./components";
 import { BrowserRouter, Route, Router, Routes } from "react-router-dom";
 
 const Home = () => (
@@ -35,18 +35,6 @@ const Home = () => (
   </div>
 )
 
-const Contact = () => (
-  <div className='bg-primary w-full overflow-hidden'>
-    <div className={`${styles.paddingX} ${styles.flexCenter}`}>
-      <div className={`${styles.boxWidth}`}>
-        <Navbar/>
-        <Eemails/>
-        <Footer/>
-      </div>    
-    </div>
-  </div>
-)
-
 const Servicos = () => (
   <div className='bg-primary w-full overflow-hidden'>
     <div className={`${styles.paddingX} ${styles.flexCenter}`}>
@@ -56,11 +44,9 @@ const Servicos = () => (
     </div>
       <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>
-          <Hero2/>
+          <Business2/>
           <Roadmap/>
           <div style={{ marginTop: '5rem' }}></div>
-          <Devmap/>
-          <CTA/>
           <Footer/>
           
         </div>
@@ -75,6 +61,7 @@ const Aboutus = () => (
     <div className={`${styles.boxWidth}`}>
       <Navbar/>
       <Devmap/>
+      <Devmap2/>
 
       <Footer/>
 
@@ -91,7 +78,6 @@ const App = () => (
       <Route path="/" element={<Home />} />
       <Route path="/home" element={<Home />} />
       <Route path="/services" element={<Servicos />} />
-      <Route path="/contato" element={<Contact />} />
       <Route path="/aboutus" element={<Aboutus />} />
     </Routes>
   </BrowserRouter>
